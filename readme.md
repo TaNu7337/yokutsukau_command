@@ -23,22 +23,22 @@ sudo apt install ufw
 
 ```
 ファイヤーウォールを無効化
-$ sudo ufw disable
+sudo ufw disable
 
 デフォルトを拒否に設定
-$ sudo ufw default deny
+sudo ufw default deny
 
 LANないからのみ､SSHを受ける
-$ sudo ufw allow proto tcp from 192.168.10.0/24 to any port 22
+sudo ufw allow proto tcp from 192.168.10.0/24 to any port 22
 
 8080の通信を許可(v4+v6)
-$ sudo ufw allow 8080
+sudo ufw allow 8080
 
 80の通信を許可(v4+v6)
-$ sudo ufw allow 80
+sudo ufw allow 80
 
 ファイヤーウォールを有効化
-$ sudo ufw enable
+sudo ufw enable
 ```
 
 ## ◎ Midnight Commander (mc)
@@ -99,4 +99,12 @@ pip install glances
 ```
 
 
+
+## docker
+
+コンテナ仮想化技術のソフトウェア
+
+導入方法は､公式のシェルスクリプトを使って導入する
+
+### インストール
 
